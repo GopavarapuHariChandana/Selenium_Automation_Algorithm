@@ -25,19 +25,11 @@ namespace Assignment
                 IWebElement lastNameField = driver.FindElement(By.Id("lname"));
                 lastNameField.SendKeys("HARI CHANDANA");
                 IWebElement mobileInput = driver.FindElement(By.Id("mobile"));
-                mobileInput.SendKeys("1234567890");
-
-
-                // You can automate interactions with other fields here
-                // For example, interacting with a dropdown menu:
-                // IWebElement stateDropdown = driver.FindElement(By.Id("state"));
-                // SelectElement select = new SelectElement(stateDropdown);
-                // select.SelectByText("India");
-
-                // Perform other interactions as needed
-
-                // Add validation or assertions to ensure the interactions were successful
-                // For example, you can use NUnit assertions or any other testing framework
+                mobileInput.SendKeys("9949334726");
+                IWebElement dateOfBirth = driver.FindElement(By.Id("dob"));
+                dateOfBirth.SendKeys("2003-06-04");
+                IWebElement email = driver.FindElement(By.Id("email"));
+                email.SendKeys("gharichandana9@gmail.com");
 
             }
             catch (Exception e)
